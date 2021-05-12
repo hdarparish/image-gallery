@@ -20,11 +20,13 @@ html{
 
 body{
     width:100%;
+    font-family: 'Montserrat', sans-serif;
 }
 h2{
-    font-size:3rem;
+    font-size:4rem;
     font-weight:lighter;
     color:#333;
+    font-family: 'Girassol', cursive;
 }
 h3{
     font-size:1.3rem;
