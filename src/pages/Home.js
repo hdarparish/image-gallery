@@ -17,7 +17,7 @@ const Home = () => {
 };
 
 const Wrapper = styled(motion.div)`
-  width: 1100px;
+  max-width: 1500px;
   margin: 40px auto;
 `;
 
@@ -27,6 +27,7 @@ const Title = styled(motion.div)`
     margin: 3rem 0;
     letter-spacing: 0.2rem;
     text-align: center;
+    cursor: default;
   }
 `;
 

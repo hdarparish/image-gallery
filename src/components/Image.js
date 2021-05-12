@@ -20,8 +20,8 @@ const Image = ({ imageURL, description, photographer }) => {
 const Container = styled(motion.div)`
   position: relative;
   text-align: left;
+  margin: 1em;
   img {
-    margin-bottom: 1em;
     background-color: #eee;
     display: block;
     width: 100%;
@@ -31,7 +31,7 @@ const Container = styled(motion.div)`
     position: absolute;
     top: 0;
     bottom: 0;
-    left: 0;
+    left: 10;
     right: 0;
     height: 0;
     width: 100%;
@@ -46,9 +46,10 @@ const Container = styled(motion.div)`
     .details {
       position: absolute;
       top: 8px;
-      left: 16px;
+      left: 20px;
       color: black;
       font-weight: bold;
+      overflow-y: hidden;
     }
     p {
       margin-bottom: 1rem;

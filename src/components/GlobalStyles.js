@@ -24,7 +24,7 @@ body{
     background-color: rgb(248, 241, 227);
 }
 h2{
-    font-size:4rem;
+    font-size:5rem;
     font-weight:lighter;
     color:#333;
     font-family: 'Girassol', cursive;
