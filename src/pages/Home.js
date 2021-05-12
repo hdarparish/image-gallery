@@ -7,20 +7,26 @@ import ImageList from "../components/ImageList";
 
 const Home = () => {
   return (
-    <div>
+    <Wrapper>
       <Title variants={popup} initial="hidden" animate="show">
         <h2>Toronto</h2>
       </Title>
       <ImageList />
-    </div>
+    </Wrapper>
   );
 };
+
+const Wrapper = styled(motion.div)`
+  width: 1100px;
+  margin: 40px auto;
+`;
 
 const Title = styled(motion.div)`
   font-size: 10rem;
   h2 {
-    margin: 3rem 5rem;
+    margin: 3rem 0;
     letter-spacing: 0.2rem;
+    text-align: center;
   }
 `;
 

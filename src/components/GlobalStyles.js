@@ -21,6 +21,7 @@ html{
 body{
     width:100%;
     font-family: 'Montserrat', sans-serif;
+    background-color: rgb(248, 241, 227);
 }
 h2{
     font-size:4rem;
