@@ -19,6 +19,7 @@ const Home = () => {
 const Wrapper = styled(motion.div)`
   max-width: 1500px;
   margin: 40px auto;
+  overflow-y:hidden;
 `;
 
 const Title = styled(motion.div)`
