@@ -3,6 +3,7 @@ import getImage from "../api";
 import Image from "./Image";
 //styles
 import Masonry, { ResponsiveMasonry } from "react-responsive-masonry";
+import InfiniteScroll from 'react-infinite-scroll-component';
 
 const ImageList = () => {
   const [images, setImages] = useState([]);
@@ -11,7 +12,6 @@ const ImageList = () => {
   const getData = async () => {
     const results = await getImage(count);
     setImages((images) => [...images, ...results]);
-    console.log(...images);
     setCount(count + 1);
   };
   useEffect(() => {
@@ -20,22 +20,32 @@ const ImageList = () => {
   }, []);
   return (
     <div>
-      <ResponsiveMasonry columnsCountBreakPoints={{ 350: 1, 750: 2, 900: 3 }}>
-        <Masonry>
-          {images.length > 0 &&
-            images.map((item) => (
-              <Image
-                imageURL={item.urls.regular}
-                description={item.description}
-                key={item.id}
-                photographer={item.user.name}
-              />
-            ))}
-        </Masonry>
-      </ResponsiveMasonry>
-      <button onClick={getData}>Load More</button>
+      <InfiniteScroll
+        dataLength={images.length} //This is important field to render the next data
+        next={getData}
+        hasMore={true}
+        loader={<h4>Loading...</h4>}
+      >
+        <ResponsiveMasonry columnsCountBreakPoints={{ 350: 1, 750: 2, 900: 3 }}>
+          <Masonry>
+            {images.length > 0 &&
+              images.map((item) => (
+                <Image
+                  imageURL={item.urls.regular}
+                  description={item.alt_description}
+                  key={item.id}
+                  photographer={item.user.name}
+                />
+              ))}
+          </Masonry>
+        </ResponsiveMasonry>
+      </InfiniteScroll>
     </div>
   );
 };
+
+
+
+
 
 export default ImageList;

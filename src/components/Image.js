@@ -3,13 +3,13 @@ import styled from "styled-components";
 import { motion } from "framer-motion";
 import { popup } from "../animation";
 
-const Image = ({ imageURL, description, photographer }) => {
+const Image = ({ imageURL, alt_description, photographer }) => {
   return (
     <Container variants={popup} initial="hidden" animate="show">
-      <img src={imageURL} alt={description} />
+      <img src={imageURL} alt={alt_description || "toronto"} />
       <div className="overlay">
         <div className="details">
-          <p>{description}</p>
+          <p>{alt_description || "No description"}</p>
           <p>Posted by: {photographer}</p>
         </div>
       </div>
