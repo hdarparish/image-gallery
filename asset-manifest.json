@@ -1,0 +1,19 @@
+{
+  "files": {
+    "main.js": "/react-toronto-website/static/js/main.a08fa444.chunk.js",
+    "main.js.map": "/react-toronto-website/static/js/main.a08fa444.chunk.js.map",
+    "runtime-main.js": "/react-toronto-website/static/js/runtime-main.624ecb25.js",
+    "runtime-main.js.map": "/react-toronto-website/static/js/runtime-main.624ecb25.js.map",
+    "static/js/2.54dd5460.chunk.js": "/react-toronto-website/static/js/2.54dd5460.chunk.js",
+    "static/js/2.54dd5460.chunk.js.map": "/react-toronto-website/static/js/2.54dd5460.chunk.js.map",
+    "static/js/3.c435cdb6.chunk.js": "/react-toronto-website/static/js/3.c435cdb6.chunk.js",
+    "static/js/3.c435cdb6.chunk.js.map": "/react-toronto-website/static/js/3.c435cdb6.chunk.js.map",
+    "index.html": "/react-toronto-website/index.html",
+    "static/js/2.54dd5460.chunk.js.LICENSE.txt": "/react-toronto-website/static/js/2.54dd5460.chunk.js.LICENSE.txt"
+  },
+  "entrypoints": [
+    "static/js/runtime-main.624ecb25.js",
+    "static/js/2.54dd5460.chunk.js",
+    "static/js/main.a08fa444.chunk.js"
+  ]
+}
