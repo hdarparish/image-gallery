@@ -79,8 +79,9 @@ const Home = () => {
           </motion.div>
         )}
       </Title>
-
-      <ImageList city={city} />
+      <div className={isOpen ? "list__opacity" : ""}>
+        <ImageList city={city} />
+      </div>
     </Wrapper>
   );
 };
@@ -91,12 +92,15 @@ const Wrapper = styled(motion.div)`
   overflow-y: hidden;
   text-align: -webkit-center;
   text-align: -moz-center;
+  .list__opacity {
+    display: none;
+    transition: display 0.5s ease-out;
+  }
 `;
 
 const Title = styled(motion.div)`
   padding: 2rem 0rem;
   width: min-content;
-  height: 23vh;
   display: flex;
   align-items: center;
   h2 {
@@ -107,10 +111,10 @@ const Title = styled(motion.div)`
   }
 
   ul {
-    height: 20vh;
-    overflow-y: scroll;
+    height: 100%;
     font-size: 2.5em;
     padding: 0rem 1rem;
+    list-style: none;
     &::-webkit-scrollbar {
       width: 0.5rem;
     }
@@ -126,6 +130,7 @@ const Title = styled(motion.div)`
       cursor: pointer;
     }
   }
+
   //font-size: 10rem;
   @media screen and (max-width: 650px) {
     h2 {

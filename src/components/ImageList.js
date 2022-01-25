@@ -2,8 +2,6 @@ import { useEffect, useState } from "react";
 import getImage from "../api";
 import Image from "./Image";
 //styles
-import { AnimatePresence, motion } from "framer-motion";
-import { popup } from "../animation";
 import Masonry, { ResponsiveMasonry } from "react-responsive-masonry";
 import InfiniteScroll from "react-infinite-scroll-component";
 

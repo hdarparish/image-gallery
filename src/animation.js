@@ -14,7 +14,7 @@ export const popup = {
   exit: {
     opacity: 0,
     scale: 0,
-    transition: { ease: "easeOut", duration: 0.5 },
+    transition: { ease: "easeOut", duration: 0.5, delay: 0.25 },
   },
 };
 
