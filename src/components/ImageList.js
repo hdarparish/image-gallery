@@ -2,27 +2,35 @@ import { useEffect, useState } from "react";
 import getImage from "../api";
 import Image from "./Image";
 //styles
+import { AnimatePresence, motion } from "framer-motion";
+import { popup } from "../animation";
 import Masonry, { ResponsiveMasonry } from "react-responsive-masonry";
-import InfiniteScroll from 'react-infinite-scroll-component';
+import InfiniteScroll from "react-infinite-scroll-component";
 
-const ImageList = () => {
+const ImageList = ({ city }) => {
   const [images, setImages] = useState([]);
   const [count, setCount] = useState(1);
 
-  const getData = async () => {
-    const results = await getImage(count);
+  const getData = async (counter) => {
+    const results = await getImage(city, counter);
+
     setImages((images) => [...images, ...results]);
-    setCount(count + 1);
+    setCount((count) => count + 1);
   };
+
   useEffect(() => {
-    //setCount(1);
-    getData();
-  }, []);
+    setImages([]);
+    setCount(1);
+    let counter = 1;
+    getData(counter);
+  }, [city]);
   return (
     <div>
       <InfiniteScroll
         dataLength={images.length} //This is important field to render the next data
-        next={getData}
+        next={() => {
+          getData(count);
+        }}
         hasMore={true}
         loader={<h4>Loading...</h4>}
       >
@@ -43,9 +51,5 @@ const ImageList = () => {
     </div>
   );
 };
-
-
-
-
 
 export default ImageList;
