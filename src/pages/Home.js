@@ -2,7 +2,7 @@ import React, { useState } from "react";
 
 //styles
 import styled from "styled-components";
-import { motion, AnimatePresence } from "framer-motion";
+import { motion } from "framer-motion";
 import { popup } from "../animation";
 
 import ImageList from "../components/ImageList";
@@ -94,7 +94,7 @@ const Wrapper = styled(motion.div)`
   text-align: -moz-center;
   .list__opacity {
     display: none;
-    transition: display 0.5s ease-out;
+    /*     transition: all 0.5s ease-out; */
   }
 `;
 
