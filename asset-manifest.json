@@ -1,19 +1,19 @@
 {
   "files": {
-    "main.js": "/react-toronto-website/static/js/main.a08fa444.chunk.js",
-    "main.js.map": "/react-toronto-website/static/js/main.a08fa444.chunk.js.map",
-    "runtime-main.js": "/react-toronto-website/static/js/runtime-main.624ecb25.js",
-    "runtime-main.js.map": "/react-toronto-website/static/js/runtime-main.624ecb25.js.map",
-    "static/js/2.54dd5460.chunk.js": "/react-toronto-website/static/js/2.54dd5460.chunk.js",
-    "static/js/2.54dd5460.chunk.js.map": "/react-toronto-website/static/js/2.54dd5460.chunk.js.map",
-    "static/js/3.c435cdb6.chunk.js": "/react-toronto-website/static/js/3.c435cdb6.chunk.js",
-    "static/js/3.c435cdb6.chunk.js.map": "/react-toronto-website/static/js/3.c435cdb6.chunk.js.map",
-    "index.html": "/react-toronto-website/index.html",
-    "static/js/2.54dd5460.chunk.js.LICENSE.txt": "/react-toronto-website/static/js/2.54dd5460.chunk.js.LICENSE.txt"
+    "main.js": "/image-gallery/static/js/main.dac8c496.chunk.js",
+    "main.js.map": "/image-gallery/static/js/main.dac8c496.chunk.js.map",
+    "runtime-main.js": "/image-gallery/static/js/runtime-main.3c68e06c.js",
+    "runtime-main.js.map": "/image-gallery/static/js/runtime-main.3c68e06c.js.map",
+    "static/js/2.947b783e.chunk.js": "/image-gallery/static/js/2.947b783e.chunk.js",
+    "static/js/2.947b783e.chunk.js.map": "/image-gallery/static/js/2.947b783e.chunk.js.map",
+    "static/js/3.94c1e660.chunk.js": "/image-gallery/static/js/3.94c1e660.chunk.js",
+    "static/js/3.94c1e660.chunk.js.map": "/image-gallery/static/js/3.94c1e660.chunk.js.map",
+    "index.html": "/image-gallery/index.html",
+    "static/js/2.947b783e.chunk.js.LICENSE.txt": "/image-gallery/static/js/2.947b783e.chunk.js.LICENSE.txt"
   },
   "entrypoints": [
-    "static/js/runtime-main.624ecb25.js",
-    "static/js/2.54dd5460.chunk.js",
-    "static/js/main.a08fa444.chunk.js"
+    "static/js/runtime-main.3c68e06c.js",
+    "static/js/2.947b783e.chunk.js",
+    "static/js/main.dac8c496.chunk.js"
   ]
 }
