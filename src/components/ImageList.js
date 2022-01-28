@@ -9,26 +9,22 @@ const ImageList = ({ city }) => {
   const [images, setImages] = useState([]);
   const [count, setCount] = useState(1);
 
-  const getData = async (counter) => {
+  const getData = async (counter = count) => {
     const results = await getImage(city, counter);
-
     setImages((images) => [...images, ...results]);
     setCount((count) => count + 1);
   };
 
   useEffect(() => {
-    setImages([]);
     setCount(1);
-    let counter = 1;
-    getData(counter);
+    setImages([]);
+    getData(1);
   }, [city]);
   return (
     <div>
       <InfiniteScroll
         dataLength={images.length} //This is important field to render the next data
-        next={() => {
-          getData(count);
-        }}
+        next={getData}
         hasMore={true}
         loader={<h4>Loading...</h4>}
       >

@@ -24,6 +24,7 @@ const getImage = async (city, count) => {
 //connecting to AWS Lambda function
 const base_url = process.env.REACT_APP_AWS_API;
 const getImage = async (city, count) => {
+  console.log(city, count);
   try {
     //const response = await axios.get(base_url);
     const response = await axios.get(base_url, {
