@@ -1,12 +1,12 @@
-# react-toronto-website
+# image-gallery
 
 ## Description
 
-This is a Toronto image library. It was developed using create-react-app.
+This is an image gallery. Users can select the city and browse the collection of images that is available on the Unsplash API. It was developed using create-react-app.
 
 
 ## Demo
-https://hdarparish.github.io/react-toronto-website/
+https://hdarparish.github.io/image-gallery/
 
 ## Prerequisites
 
@@ -22,5 +22,5 @@ https://hdarparish.github.io/react-toronto-website/
 
 ## Roadmap
 
-- Add more gallery options (different neighborhoods)
+- ~~Add more gallery options (different neighborhoods)~~
 - Add dark mode
